@@ -16,8 +16,7 @@ Vector.prototype.get_name=function(){
 	}else if(this.y==0){
 		type=2//在y軸上面
 	}else{
-		a=this.y/this.x*100;	
-		a=Math.round(a)/100;
+		a=Math.round(this.y/this.x*100)/100;
 	}
 
 	this.a=a;
